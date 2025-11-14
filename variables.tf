@@ -1,23 +1,26 @@
 variable "project_name" {
   description = "Name of the project"
   type        = string
-  default     = "terraform-aws-demo-with-vpc-template"
+  default     = "cognito-saml-azure-alb"
 }
 
-variable "region" {
-  description = "AWS region"
+variable "azure_tenant_id" {
+  description = "Azure AD tenant ID"
   type        = string
-  default     = "ap-southeast-2"
 }
 
-variable "availability_zones" {
-  description = "List of availability zones"
-  type        = list(string)
-  default     = ["ap-southeast-2a", "ap-southeast-2b"]
+variable "azure_client_id" {
+  description = "Azure AD application client ID"
+  type        = string
 }
 
-variable "one_nat_gateway_per_az" {
-  description = "Should be true if you want one NAT Gateway per availability zone. Otherwise, one NAT Gateway will be used for all AZs."
-  type        = bool
-  default     = true
+variable "domain_name" {
+  description = "Domain name"
+  type        = string
+}
+
+variable "cognito_domain_prefix" {
+  description = "Custom prefix for Cognito domain. If empty, a random suffix will be used."
+  type        = string
+  default     = ""
 }
