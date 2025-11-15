@@ -49,16 +49,7 @@
   "editor.detectIndentation": false,
   "workbench.iconTheme": "vscode-icons",
   "workbench.colorTheme": "Default Dark+",
-  "terraform.path": "/usr/bin/terraform",
-  "terraform.format.enable": true,
-  "terraform.format.vars": true,
-  "terraform.languageServer": {
-    "enabled": true,
-    "external": true,
-    "args": ["serve"]
-  },
   "terraform.codelens.referenceCount": true,
-  "terraform.codelens.enable": true,
   "[terraform]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "hashicorp.terraform",
@@ -92,9 +83,6 @@
     "editor.defaultFormatter": "foxundermoon.shell-format",
     "editor.tabSize": 2,
     "editor.insertSpaces": true
-  },
-  "[dockerfile]": {
-    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
   },
   "[markdown]": {
     "editor.defaultFormatter": "davidanson.vscode-markdownlint",
